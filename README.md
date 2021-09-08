@@ -12,7 +12,8 @@ Assumptions:
 Instructions:
 
 	- At start the application will start in foreground. (I could not
-	  preserve the state using a boolean variable.) Fixed.
+	  preserve the state using a boolean variable.) Fixed - App starts
+	  in background.
 	  
 	- 3 clicks of Volume Down will send application to Foreground
 	 (due to instruction above).
