@@ -30,6 +30,12 @@ public class PlayerService extends Service {
         .setState( PlaybackStateCompat.STATE_PLAYING, 0, 0 )
         .build() );
 
+        // Put into background
+        Intent it = new Intent();
+        it.setAction( Intent.ACTION_MAIN );
+        it.addCategory(Intent.CATEGORY_HOME);
+        PlayerService.super.startActivity(it);
+        
         VolumeProviderCompat myVolumeProvider = new VolumeProviderCompat(
                 VolumeProviderCompat.VOLUME_CONTROL_RELATIVE,
                 100,
