@@ -1,4 +1,4 @@
-package com.example.faith_volumeprovidercompat;
+package com.example.volume_controller;
 
 import android.content.Context;
 import android.content.Intent;
